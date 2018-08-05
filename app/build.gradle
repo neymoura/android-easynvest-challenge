@@ -1,0 +1,64 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.ghost.easynvestchallenge"
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
+}
+
+def junit_version        = "4.12"
+def androidTest_version  = "1.0.2"
+def espresso_version     = "3.0.2"
+def anko_version         = "0.10.5"
+def retrofit_version     = "2.0.2"
+def retrofitRx_version   = "2.4.0"
+def rxJava_version       = "2.1.11"
+def rxKotlin_version     = "2.2.0"
+def rxAndroid_version    = "2.0.2"
+def appCompat_version    = "27.1.1"
+def constraint_version   = "1.1.2"
+
+dependencies {
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    testImplementation "junit:junit:$junit_version"
+    androidTestImplementation "com.android.support.test:runner:$androidTest_version"
+    androidTestImplementation "com.android.support.test:rules:$androidTest_version"
+    androidTestImplementation "com.android.support.test.espresso:espresso-core:$espresso_version"
+    androidTestImplementation "com.android.support.test.espresso:espresso-intents:$espresso_version"
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "org.jetbrains.anko:anko-commons:$anko_version"
+
+    implementation "com.android.support:appcompat-v7:$appCompat_version"
+    implementation "com.android.support.constraint:constraint-layout:$constraint_version"
+
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofitRx_version"
+
+    implementation "io.reactivex.rxjava2:rxjava:$rxJava_version"
+    implementation "io.reactivex.rxjava2:rxkotlin:$rxKotlin_version"
+    implementation "io.reactivex.rxjava2:rxandroid:$rxAndroid_version"
+
+}
