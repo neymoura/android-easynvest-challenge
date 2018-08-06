@@ -1,6 +1,6 @@
 package com.ghost.easynvestchallenge.modules.simulation.entity
 
-class SimulationResult(val investmentParameter: InvestmentParameter?,
+class SimulationResult(val investmentParameter: Investment?,
                        val grossAmount: Double?,
                        val taxesAmount: Double?,
                        val netAmount: Double?,
