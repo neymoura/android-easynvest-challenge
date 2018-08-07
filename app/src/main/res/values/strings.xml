@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Easynvest Challenge</string>
+    <string name="investment_amount_input">Quanto você gostaria de aplicar? *</string>
+    <string name="investment_due_date_input">Qual a data de vencimento do investimento? *</string>
+    <string name="cdi_index_rate_input">Qual o percentual do CDI do investimento? *</string>
+    <string name="investment_amount_hint">R$</string>
+    <string name="investment_due_date_hint">dia/mês/ano</string>
+    <string name="cdi_index_rate_hint">100%</string>
+    <string name="confirm_simulation_button">Simular</string>
 </resources>
