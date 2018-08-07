@@ -27,6 +27,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="R$ 1.000,00"
+            android:textColor="@android:color/black"
             app:layout_constraintBaseline_toBaselineOf="@+id/textView6"
             app:layout_constraintEnd_toStartOf="@+id/guideline4" />
 
@@ -53,10 +54,10 @@
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="16dp"
-            android:text="R$1088,69"
+            android:layout_marginTop="8dp"
+            android:text="R$1.088,69"
             android:textAppearance="@style/Base.ThemeOverlay.AppCompat"
-            android:textSize="32sp"
+            android:textSize="45sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/simulation_result_label" />
@@ -70,7 +71,7 @@
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="8dp"
             android:text="@string/total_income_label"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -113,6 +114,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="TextView"
+            android:textColor="@android:color/black"
             app:layout_constraintBaseline_toBaselineOf="@+id/textView10"
             app:layout_constraintEnd_toStartOf="@+id/guideline4"
             tools:text="R$ 1.000,00" />
@@ -131,6 +133,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="TextView"
+            android:textColor="@android:color/black"
             app:layout_constraintBaseline_toBaselineOf="@+id/textView12"
             app:layout_constraintEnd_toStartOf="@+id/guideline4"
             tools:text="R$ 15,52 (17,59%)" />
@@ -149,6 +152,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="R$ 1.000,00"
+            android:textColor="@android:color/black"
             app:layout_constraintBaseline_toBaselineOf="@+id/textView14"
             app:layout_constraintEnd_toStartOf="@+id/guideline4" />
 
@@ -166,6 +170,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="TextView"
+            android:textColor="@android:color/black"
             app:layout_constraintBaseline_toBaselineOf="@+id/textView16"
             app:layout_constraintEnd_toStartOf="@+id/guideline4"
             tools:text="01/01/2019" />
@@ -184,6 +189,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="365"
+            android:textColor="@android:color/black"
             app:layout_constraintBaseline_toBaselineOf="@+id/textView18"
             app:layout_constraintEnd_toStartOf="@+id/guideline4" />
 
@@ -201,6 +207,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="0,57%"
+            android:textColor="@android:color/black"
             app:layout_constraintBaseline_toBaselineOf="@+id/textView20"
             app:layout_constraintEnd_toStartOf="@+id/guideline4" />
 
@@ -218,6 +225,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="123%"
+            android:textColor="@android:color/black"
             app:layout_constraintBaseline_toBaselineOf="@+id/textView22"
             app:layout_constraintEnd_toStartOf="@+id/guideline4" />
 
@@ -235,6 +243,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="7,09%"
+            android:textColor="@android:color/black"
             app:layout_constraintBaseline_toBaselineOf="@+id/textView25"
             app:layout_constraintEnd_toStartOf="@+id/guideline4" />
 
@@ -252,6 +261,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="8,57%"
+            android:textColor="@android:color/black"
             app:layout_constraintBaseline_toBaselineOf="@+id/textView27"
             app:layout_constraintEnd_toStartOf="@+id/guideline4" />
 
@@ -275,6 +285,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="R$ 1.000,00"
+            android:textColor="@android:color/black"
             app:layout_constraintBaseline_toBaselineOf="@+id/textView4"
             app:layout_constraintEnd_toStartOf="@+id/guideline4" />
 
