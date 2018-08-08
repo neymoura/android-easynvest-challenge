@@ -16,12 +16,12 @@ class SimulationNetworkTest {
         RxAndroidPlugins.setMainThreadSchedulerHandler { Schedulers.trampoline() }
     }
 
-   @Test
-    fun simulateRequest(){
+    @Test
+    fun simulateRequest() {
 
-       val signal = CountDownLatch(1)
+        val signal = CountDownLatch(1)
 
-       SimulationNetwork.simulate(1000.0,
+        SimulationNetwork.simulate(1000.0,
                 "CDI",
                 123,
                 false,
@@ -29,12 +29,12 @@ class SimulationNetworkTest {
                 {
                     assert(true)
                     signal.countDown()
-                },{
-                    assert(false)
-                    signal.countDown()
-                })
+                }, {
+            assert(false)
+            signal.countDown()
+        })
 
-       signal.await()
+        signal.await()
 
     }
 
