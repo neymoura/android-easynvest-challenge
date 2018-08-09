@@ -23,10 +23,9 @@
             app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
         <TextView
-            android:id="@+id/textView7"
+            android:id="@+id/grossAmountValue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="R$ 1.000,00"
             android:textColor="@android:color/black"
             app:layout_constraintBaseline_toBaselineOf="@+id/textView6"
             app:layout_constraintEnd_toStartOf="@+id/guideline4" />
@@ -40,13 +39,14 @@
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
             android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
             android:text="@string/simulation_result_label"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="38dp" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/grosss_amount_label"
+            android:id="@+id/grossAmountValueBig"
             style="@style/fancyLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -55,7 +55,6 @@
             android:layout_marginRight="8dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
-            android:text="R$1.088,69"
             android:textAppearance="@style/Base.ThemeOverlay.AppCompat"
             android:textSize="45sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -63,7 +62,7 @@
             app:layout_constraintTop_toBottomOf="@+id/simulation_result_label" />
 
         <TextView
-            android:id="@+id/simulation_result_label2"
+            android:id="@+id/grossAmountProfitBig"
             style="@style/fancyLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -75,7 +74,7 @@
             android:text="@string/total_income_label"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/grosss_amount_label" />
+            app:layout_constraintTop_toBottomOf="@+id/grossAmountValueBig" />
 
         <TextView
             android:id="@+id/textView4"
@@ -84,7 +83,7 @@
             android:layout_marginTop="48dp"
             android:text="@string/invested_amount_label"
             app:layout_constraintStart_toStartOf="@+id/guideline3"
-            app:layout_constraintTop_toBottomOf="@+id/simulation_result_label2" />
+            app:layout_constraintTop_toBottomOf="@+id/grossAmountProfitBig" />
 
         <android.support.constraint.Guideline
             android:id="@+id/guideline3"
@@ -110,14 +109,12 @@
             app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
         <TextView
-            android:id="@+id/textView11"
+            android:id="@+id/grossAmountProfit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView"
             android:textColor="@android:color/black"
             app:layout_constraintBaseline_toBaselineOf="@+id/textView10"
-            app:layout_constraintEnd_toStartOf="@+id/guideline4"
-            tools:text="R$ 1.000,00" />
+            app:layout_constraintEnd_toStartOf="@+id/guideline4" />
 
         <TextView
             android:id="@+id/textView12"
@@ -129,14 +126,12 @@
             app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
         <TextView
-            android:id="@+id/textView13"
+            android:id="@+id/taxesValue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView"
             android:textColor="@android:color/black"
             app:layout_constraintBaseline_toBaselineOf="@+id/textView12"
-            app:layout_constraintEnd_toStartOf="@+id/guideline4"
-            tools:text="R$ 15,52 (17,59%)" />
+            app:layout_constraintEnd_toStartOf="@+id/guideline4" />
 
         <TextView
             android:id="@+id/textView14"
@@ -148,10 +143,9 @@
             app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
         <TextView
-            android:id="@+id/textView15"
+            android:id="@+id/netAmountValue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="R$ 1.000,00"
             android:textColor="@android:color/black"
             app:layout_constraintBaseline_toBaselineOf="@+id/textView14"
             app:layout_constraintEnd_toStartOf="@+id/guideline4" />
@@ -166,14 +160,12 @@
             app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
         <TextView
-            android:id="@+id/textView17"
+            android:id="@+id/maturityDateValue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView"
             android:textColor="@android:color/black"
             app:layout_constraintBaseline_toBaselineOf="@+id/textView16"
-            app:layout_constraintEnd_toStartOf="@+id/guideline4"
-            tools:text="01/01/2019" />
+            app:layout_constraintEnd_toStartOf="@+id/guideline4" />
 
         <TextView
             android:id="@+id/textView18"
@@ -185,10 +177,9 @@
             app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
         <TextView
-            android:id="@+id/textView19"
+            android:id="@+id/maturityTotalDaysValue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="365"
             android:textColor="@android:color/black"
             app:layout_constraintBaseline_toBaselineOf="@+id/textView18"
             app:layout_constraintEnd_toStartOf="@+id/guideline4" />
@@ -203,10 +194,9 @@
             app:layout_constraintTop_toBottomOf="@+id/textView18" />
 
         <TextView
-            android:id="@+id/textView21"
+            android:id="@+id/monthlyGrossRateProfitValue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="0,57%"
             android:textColor="@android:color/black"
             app:layout_constraintBaseline_toBaselineOf="@+id/textView20"
             app:layout_constraintEnd_toStartOf="@+id/guideline4" />
@@ -221,10 +211,9 @@
             app:layout_constraintTop_toBottomOf="@+id/textView20" />
 
         <TextView
-            android:id="@+id/textView23"
+            android:id="@+id/rateValue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="123%"
             android:textColor="@android:color/black"
             app:layout_constraintBaseline_toBaselineOf="@+id/textView22"
             app:layout_constraintEnd_toStartOf="@+id/guideline4" />
@@ -239,10 +228,9 @@
             app:layout_constraintTop_toBottomOf="@+id/textView22" />
 
         <TextView
-            android:id="@+id/textView26"
+            android:id="@+id/annualNetRateProfitValue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="7,09%"
             android:textColor="@android:color/black"
             app:layout_constraintBaseline_toBaselineOf="@+id/textView25"
             app:layout_constraintEnd_toStartOf="@+id/guideline4" />
@@ -257,34 +245,34 @@
             app:layout_constraintTop_toBottomOf="@+id/textView25" />
 
         <TextView
-            android:id="@+id/textView28"
+            android:id="@+id/rateProfitValue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="8,57%"
             android:textColor="@android:color/black"
             app:layout_constraintBaseline_toBaselineOf="@+id/textView27"
             app:layout_constraintEnd_toStartOf="@+id/guideline4" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/simulateAgain"
             style="@style/fancyButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="48dp"
             android:text="@string/simulate_again_button"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView27" />
 
         <TextView
-            android:id="@+id/textView29"
+            android:id="@+id/investedAmountValue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="R$ 1.000,00"
             android:textColor="@android:color/black"
             app:layout_constraintBaseline_toBaselineOf="@+id/textView4"
             app:layout_constraintEnd_toStartOf="@+id/guideline4" />
