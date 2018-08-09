@@ -1,6 +1,6 @@
 package com.ghost.easynvestchallenge.modules.simulation.network
 
-import com.ghost.easynvestchallenge.modules.simulation.entity.SimulationResult
+import com.ghost.easynvestchallenge.modules.simulation.model.SimulationResult
 import io.reactivex.Observable
 import retrofit2.http.GET
 import retrofit2.http.Query

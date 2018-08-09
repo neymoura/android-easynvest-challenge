@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="8dp"
+    android:id="@+id/constraintLayout"
     tools:context=".modules.simulation.view.activity.SimulationActivity">
 
     <TextView
@@ -110,14 +111,14 @@
         android:ems="10"
         android:hint="@string/cdi_index_rate_hint"
         android:inputType="number"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/runSimulationButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/index_rate_label" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/runSimulationButton"
         style="@style/fancyButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"

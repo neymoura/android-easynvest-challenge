@@ -1,4 +1,6 @@
-package com.ghost.easynvestchallenge.modules.simulation.entity
+package com.ghost.easynvestchallenge.modules.simulation.model
+
+import java.io.Serializable
 
 class Investment(val investedAmount: Double?,
                  val yearlyInterestRate: Double?,
@@ -6,4 +8,4 @@ class Investment(val investedAmount: Double?,
                  val maturityBusinessDays: Int?,
                  val maturityDate: String?,
                  val rate: Double?,
-                 val isTaxFree: Boolean?)
+                 val isTaxFree: Boolean?): Serializable

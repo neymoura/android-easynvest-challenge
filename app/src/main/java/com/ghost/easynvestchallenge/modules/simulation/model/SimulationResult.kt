@@ -1,4 +1,6 @@
-package com.ghost.easynvestchallenge.modules.simulation.entity
+package com.ghost.easynvestchallenge.modules.simulation.model
+
+import java.io.Serializable
 
 class SimulationResult(val investmentParameter: Investment?,
                        val grossAmount: Double?,
@@ -11,4 +13,4 @@ class SimulationResult(val investmentParameter: Investment?,
                        val dailyGrossRateProfit: Double?,
                        val taxesRate: Double?,
                        val rateProfit: Double?,
-                       val annualNetRateProfit: Double?)
+                       val annualNetRateProfit: Double?): Serializable

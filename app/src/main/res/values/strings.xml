@@ -8,6 +8,7 @@
     <string name="investment_due_date_hint">dia/mês/ano</string>
     <string name="cdi_index_rate_hint">100%</string>
     <string name="confirm_simulation_button">Simular</string>
+    <string name="something_went_wrong">Parece que algo deu errado… Quer tentar novamente?</string>
 
     <string name="simulation_result_label">Resultado da Simulação</string>
     <string name="total_income_label">Rendimento total de </string>

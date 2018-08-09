@@ -34,8 +34,9 @@ def retrofitRx_version   = "2.4.0"
 def rxJava_version       = "2.1.11"
 def rxKotlin_version     = "2.2.0"
 def rxAndroid_version    = "2.0.2"
-def appCompat_version    = "27.1.1"
+def support_version    = "27.1.1"
 def constraint_version   = "1.1.2"
+def lifecycle_version    = "1.1.1"
 
 dependencies {
 
@@ -49,8 +50,12 @@ dependencies {
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation "org.jetbrains.anko:anko-commons:$anko_version"
+    implementation "org.jetbrains.anko:anko-design:$anko_version"
 
-    implementation "com.android.support:appcompat-v7:$appCompat_version"
+    implementation "android.arch.lifecycle:extensions:$lifecycle_version"
+
+    implementation "com.android.support:design:$support_version"
+    implementation "com.android.support:appcompat-v7:$support_version"
     implementation "com.android.support.constraint:constraint-layout:$constraint_version"
 
     implementation "com.squareup.retrofit2:retrofit:$retrofit_version"

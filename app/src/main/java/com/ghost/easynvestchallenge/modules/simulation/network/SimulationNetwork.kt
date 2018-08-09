@@ -1,7 +1,7 @@
 package com.ghost.easynvestchallenge.modules.simulation.network
 
 import com.ghost.easynvestchallenge.core.network.BaseNetwork
-import com.ghost.easynvestchallenge.modules.simulation.entity.SimulationResult
+import com.ghost.easynvestchallenge.modules.simulation.model.SimulationResult
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
 
