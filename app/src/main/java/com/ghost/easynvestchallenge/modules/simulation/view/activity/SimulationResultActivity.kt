@@ -49,13 +49,16 @@ class SimulationResultActivity : BaseActivity() {
         investedAmountValue.text         = presenter.investedAmount
         grossAmountValue.text            = presenter.grossAmount
         grossAmountValueBig.text         = presenter.grossAmount
+        grossAmountProfitValue.text      = presenter.grossAmountProfit
+        grossAmountProfitBigValue.text   = getString(R.string.gross_amount_profit_big_label, presenter.grossAmountProfit)
+        taxesValue.text                  = presenter.taxes
         netAmountValue.text              = presenter.netAmount
         maturityDateValue.text           = presenter.maturityDate
         maturityTotalDaysValue.text      = presenter.maturityTotalDays
         monthlyGrossRateProfitValue.text = presenter.monthlyGrossRateProfit
         rateValue.text                   = presenter.rate
-        annualNetRateProfitValue.text    = presenter.annualNetRateProfit
-        rateProfitValue.text             = presenter.annualNetRateProfit
+        annualGrossRateProfitValue.text  = presenter.annualGrossRateProfity
+        rateProfitValue.text             = presenter.rateProfit
     }
 
 }
