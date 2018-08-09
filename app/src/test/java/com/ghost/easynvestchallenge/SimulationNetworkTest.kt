@@ -29,10 +29,12 @@ class SimulationNetworkTest {
                 {
                     assert(true)
                     signal.countDown()
-                }, {
-            assert(false)
-            signal.countDown()
-        })
+                },
+                {
+                    assert(false)
+                    signal.countDown()
+                }
+        )
 
         signal.await()
 
